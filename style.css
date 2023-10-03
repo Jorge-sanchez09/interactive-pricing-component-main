@@ -103,11 +103,9 @@ header h1{
 input[name="page-views"]{
     grid-column: 1 / -1;
     appearance: none;
-    background-color: var(--clr-primary-300);
     background-image: linear-gradient(to right,
         var(--clr-primary-300) var(--slider-fill),
-        var(--clr-neutral-350) 0%,
-        var(--clr-neutral-350) 25%);
+        var(--clr-neutral-350) 0% 100%);
     height: 15px;
     border-radius: 2em;
 }
@@ -130,7 +128,6 @@ input[name="page-views"]{
 
 input[name="page-views"]::-webkit-slider-thumb{
     appearance: none;
-    position: relative;
     width: 50px;
     height: 50px;
     border: none;
@@ -145,7 +142,6 @@ input[name="page-views"]::-webkit-slider-thumb{
 
 input[name="page-views"]::-moz-range-thumb{
     appearance: none;
-    position: relative;
     width: 50px;
     height: 50px;
     border: none;
